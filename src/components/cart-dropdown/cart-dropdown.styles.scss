@@ -10,14 +10,31 @@
     top: 90px;
     right: 40px;
     z-index: 5;
-  
+    overflow-y: scroll;
+    scrollbar-width: none;
+    
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .empty-message {
+        font-size: 20px;
+        margin: 50px auto;
+    }
+
     .cart-items {
+        overflow: hidden;
         height: 240px;
         display: flex;
         flex-direction: column;
-        overflow: scroll;
+        overflow-y: scroll;
+        scrollbar-width: none;
+      
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
-  
+   
     button {
         margin-top: auto;
     }
