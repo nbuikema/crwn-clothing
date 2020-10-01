@@ -11,7 +11,6 @@ const CollectionPage = ({ collection }) => {
 
     return (
         <div className='collection'>
-            {console.log(collection)}
             <h2 className='title'>{ title }</h2>
             <div className='items'>
                 {
