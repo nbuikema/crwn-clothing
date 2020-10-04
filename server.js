@@ -28,8 +28,6 @@ app.listen(port, error => {
     console.log(`server started on port ${port}`);
 });
 
-console.log(process.env.NODE_ENV);
-
 app.post('/payment', (req, res) => {
     console.log(process.env.STRIPE_SECRET_KEY);
 
